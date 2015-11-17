@@ -298,13 +298,12 @@
 
       
         
-          <span itemprop="articleBody">
-            
-              <h2 id="以前的方法">以前的方法</h2><p>如果是要获得程序运行的当前目录所在位置，那么可以使用os模块的<code>os.getcwd()</code>函数。</p>
-<h2 id="正确的方法">正确的方法</h2><p>但以上这些其实都不是脚本文件所在目录的位置,获取Python脚本所在目录实际应使用<code>os.path.split(os.path.realpath(__file__))[0]</code>其中<code>__file__</code>虽然是所在.py文件的完整路径，但是这个变量有时候返回相对路径，有时候返回绝对路径，因此 还要用<code>os.path.realpath()</code>函数来处理一下。</p>
-
-            
-          </span>
+          <h2 id="以前的方法">以前的方法</h2><p>如果是要获得程序运行的当前目录所在位置，那么可以使用os模块的<code>os.getcwd()</code>函数。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/11/17/require-proper-python-file-path/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
