@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Python,技术," />
+  <meta name="keywords" content="杂感," />
 
 
 
@@ -51,16 +51,16 @@
 
 
 
-<meta name="description" content="Python编程在字典操作中遇到的一个坑">
+<meta name="description" content="十一蹲在实验室无聊就随便写写吧。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python字典操作中注意事项">
-<meta property="og:url" content="http://www.shily.me/2015/11/17/python-bug/index.html">
+<meta property="og:title" content="国庆小记">
+<meta property="og:url" content="http://www.shily.me/2014/10/07/National-Day/index.html">
 <meta property="og:site_name" content="Tony042's Notes">
-<meta property="og:description" content="Python编程在字典操作中遇到的一个坑">
-<meta property="og:updated_time" content="2014-09-04T09:11:30.000Z">
+<meta property="og:description" content="十一蹲在实验室无聊就随便写写吧。">
+<meta property="og:updated_time" content="2015-11-17T13:19:58.868Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python字典操作中注意事项">
-<meta name="twitter:description" content="Python编程在字典操作中遇到的一个坑">
+<meta name="twitter:title" content="国庆小记">
+<meta name="twitter:description" content="十一蹲在实验室无聊就随便写写吧。">
 
 
 
@@ -72,7 +72,7 @@
   };
 </script>
 
-  <title> Python字典操作中注意事项 | Tony042's Notes </title>
+  <title> 国庆小记 | Tony042's Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -223,7 +223,7 @@
             
             
               
-                Python字典操作中注意事项
+                国庆小记
               
             
           </h1>
@@ -232,8 +232,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-11-17T20:36:17+08:00" content="2015-11-17">
-              2015-11-17
+            <time itemprop="dateCreated" datetime="2014-10-07T12:50:04+08:00" content="2014-10-07">
+              2014-10-07
             </time>
           </span>
 
@@ -242,8 +242,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
+                  <a href="/categories/随笔/" itemprop="url" rel="index">
+                    <span itemprop="name">随笔</span>
                   </a>
                 </span>
 
@@ -258,8 +258,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/11/17/python-bug/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/17/python-bug/" itemprop="commentsCount"></span>
+                <a href="/2014/10/07/National-Day/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2014/10/07/National-Day/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -278,7 +278,15 @@
       
 
       
-        <span itemprop="articleBody"><p>我在进行字典操作的时候，碰到了Python中一个不算是坑的坑，让我找bug找了一个多小时，逻辑错误果然伤不起。。。在Python中dict.fromkeys(seq,val=None)的命令为创建并返回一个新字典，以序列seq中元素做字典的键，val为字典所有键对应的初始值(默认为None)。**但是注意在设置val=[]是，采取的是引用，而不是为每个键产生一个独立的列表，在采取列表操作的时候可能会出错，所以在使用这个内置函数的时候要避免此类错误。例子如下：<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; a=&#123;&#125;.fromkeys([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],[])</span><br><span class="line">&gt;&gt;&gt; a</span><br><span class="line">&#123;<span class="number">1</span>: [], <span class="number">2</span>: [], <span class="number">3</span>: []&#125;</span><br><span class="line">&gt;&gt;&gt; a[<span class="number">1</span>].append(<span class="string">"b"</span>)<span class="comment">#可能产生一个引用的逻辑错误</span></span><br><span class="line">&gt;&gt;&gt; a</span><br><span class="line">&#123;<span class="number">1</span>: [<span class="string">'b'</span>], <span class="number">2</span>: [<span class="string">'b'</span>], <span class="number">3</span>: [<span class="string">'b'</span>]&#125;</span><br></pre></td></tr></table></figure></p>
+        <span itemprop="articleBody"><p>本来说好昨天写完的，结果就拖到了今天，拖延症真心伤不起&gt;_&lt;昨天去实验室本来想大干一场（我真的不是因为寝室电用完了才去的=￣ω￣=），可是现实是残酷的。。。国重的超算又宕机了，撸了几把炉石就无奈的回到了寝室，拉上室友一起先爬岳麓山然后又去长沙油炸社吃了烧烤，瞬间觉得整个人生是如此的美好——吃吃喝喝玩玩乐乐睡睡（怎么突然感觉和某种动物好像？！）。一入大三，就觉得自己有好多事要做，可是在这个关键的时候我却什么都不想干，连Python都不想玩了。。。这学期给自己定下了很多目标：</p>
+<ol>
+<li>把Toefl考过。</li>
+<li>把GRE单词背完。</li>
+<li>项目认真做，做出点东西。</li>
+<li>Python用WeRobot搭一个像中南助手一样的微信公众号出来。</li>
+<li>把成绩搞好。</li>
+</ol>
+<p>不过好像现在一向都没完成，在给大一孩子开班会的时候还说让他们好好学习，争取在大一大二的时候把GT都考过了，可是看看自己呢，好惭愧。。。大一的时候体会到了一下恋爱的感觉，可是并没有想象中那么美好，更多的还是苦涩，最后也是一个悲伤的结局。大二想要努力搞学习好像和现实的差距好大。今年要是能把上面的那五个目标都搞定就好了，如果再能遇到一个对的人，我觉得我真的会觉得很开很开心，要是能做一个炫酷又懂生活的人最棒了&gt;_&lt;<br>————————————————————————2014-11 Update—————————————————————————<br>第四项已完成，欢迎大家加我的微信公众号shily_me，关注后可以向我要激活码开启更多隐藏功能。</p>
 </span>
       
     </div>
@@ -287,9 +295,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Python/" rel="tag">#Python</a>
-          
-            <a href="/tags/技术/" rel="tag">#技术</a>
+            <a href="/tags/杂感/" rel="tag">#杂感</a>
           
         </div>
       
@@ -298,15 +304,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/17/National-Day/" rel="next" title="国庆小记">
-                <i class="fa fa-chevron-left"></i> 国庆小记
+              <a href="/2014/09/09/python-bug/" rel="next" title="Python字典操作中注意事项">
+                <i class="fa fa-chevron-left"></i> Python字典操作中注意事项
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/11/17/python-pymongo/" rel="prev" title="初学MongoDB">
+              <a href="/2014/11/15/python-pymongo/" rel="prev" title="初学MongoDB">
                 初学MongoDB <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -335,8 +341,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/11/17/python-bug/"
-           data-title="Python字典操作中注意事项" data-url="http://www.shily.me/2015/11/17/python-bug/">
+      <div class="ds-thread" data-thread-key="2014/10/07/National-Day/"
+           data-title="国庆小记" data-url="http://www.shily.me/2014/10/07/National-Day/">
       </div>
     
   </div>
