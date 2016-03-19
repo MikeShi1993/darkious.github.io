@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="别人的生日,单身狗的怨念,大四,实习,小记,杂感," />
@@ -44,7 +50,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
 
 
 
@@ -66,10 +72,16 @@
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Mist',
-    sidebar: 'post',
-    motion: true
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -78,15 +90,6 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -94,7 +97,16 @@
 
 
 
-  <div class="container one-column page-post-detail">
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -123,7 +135,7 @@
   
 
   
-    <ul id="menu" class="menu menu-left">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
@@ -167,6 +179,16 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
     </ul>
   
@@ -174,11 +196,9 @@
   
     <div class="site-search">
       
-  
   <form class="site-search-form">
-    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-  </form>
-
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
 
 <script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
@@ -200,8 +220,9 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
@@ -232,7 +253,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-11-20T01:21:51+08:00" content="2015-11-20">
               2015-11-20
             </time>
@@ -240,7 +264,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/随笔/" itemprop="url" rel="index">
@@ -268,20 +296,29 @@
 
           
 
+          
+          
+
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><p>&emsp;&emsp;来株洲实习快两周了，六周的实习不知不觉已经过去三分之一，而本科生涯也即将结束，不得不说时间过得真的很快。株硬故地重游，从型材车间又转到钻头厂进行实习，了解了这么多关于硬质合金生产的知识，我也算半个株硬人了吧。这次我和维可、学霸、刘静一个小组，由于这个实习主要由我们自行安排，而带我们的饶主任也比较忙，无暇顾及我们，所以空闲时间比暑假那次略微多了一些，而且这次都是本班同学，也比较熟，因此比上回轻松了不少。<br>&emsp;&emsp;实习的第二天就是双十一，本来只计划趁着双十一买一点狮王牙线，结果在马云红包攻势下多买了一双鞋子和一大箱达利园蛋黄派、软面包，自然预算也翻了一番还多，幸运的是还秒杀到了四件宝贝，一分钱还包邮。总的算下来这个双十一并没有让某宝赚到很多，嘿嘿。<a id="more"></a><br>&emsp;&emsp;今天是刘静的生日，俊阳提前一天就QQ上跟我们说他要给刘静一个惊喜————到株洲给刘静过生日，让我们大家一起给她过一个有意义的生日。上周因为毕业生图像采集回长沙了一趟，在返程的路上刘静提到了很多关于俊阳的话题，脸上洋溢着幸福的表情。让我羡慕不已，什么时候我能找到属于我的Ms.Right呢？<br><img src="http://7xodgy.com1.z0.glb.clouddn.com/IMG_3310.JPG" alt="">&emsp;&emsp;而今天俊阳来给她过生日简直是给我这种单身狗造成了1000000点伤害，单身有时候久了，就会想自己什么时候能再次脱单呢，有个妹子在身边真的是件极好的事情。俊阳从85度C买来了水果蛋糕，又拿了一大束玫瑰，晚上坐车赶到株洲，为刘静过了这么有意义的一个生日，真的是好男人，我希望自己也能将来成为一个爱护妹子的优秀男生，不做渣男。<br>&emsp;&emsp;这两天，我写代码的时候总想写笔记做备忘，但觉得之前Hexo的那个主题色调单一，并没有写东西的动力，估计是看久那个主题的缘故，就跟毁一首歌最佳的办法就是把它设为起床闹钟一样，没有日久生情而是七年之痒~趁着刚刚重装完系统，我换上了Next主题，感觉还不错。回顾之前写的文章，突然发现我都快一年没有写blog了，没想到时间过的是如此之快，我只想时间慢一点再慢一点，能让我从容转身，多给我一点点辗转腾挪的空间。<br>&emsp;&emsp;去年国庆的时候，我跟自己下过5个目标，到现也只是把微信公众号完成了，而GPA保持的也还好，虽然不高但是也还看的过去，项目也水水结束了。但是Toefl和Gre搞了一年还多却进展不大，让我真的对自己很失望，当时奋战的考友一个又一个考了过去，而我面临申请也没考出来，实在是说不过去，也让我不得不往后推迟申请一年，这确实让我非常不爽。大四这一年我总觉得自己不够努力，既然放弃了那么多，为什么不去搏一搏，为自己争取一个更好的未来呢。我该振作起来了，既然选择放弃了上交，只能背水一战了，希望我能跨过Pacific Ocean到美帝去而不是留在中南读研，Fighting！</p>
+        <p>&emsp;&emsp;来株洲实习快两周了，六周的实习不知不觉已经过去三分之一，而本科生涯也即将结束，不得不说时间过得真的很快。株硬故地重游，从型材车间又转到钻头厂进行实习，了解了这么多关于硬质合金生产的知识，我也算半个株硬人了吧。这次我和维可、学霸、刘静一个小组，由于这个实习主要由我们自行安排，而带我们的饶主任也比较忙，无暇顾及我们，所以空闲时间比暑假那次略微多了一些，而且这次都是本班同学，也比较熟，因此比上回轻松了不少。<br>&emsp;&emsp;实习的第二天就是双十一，本来只计划趁着双十一买一点狮王牙线，结果在马云红包攻势下多买了一双鞋子和一大箱达利园蛋黄派、软面包，自然预算也翻了一番还多，幸运的是还秒杀到了四件宝贝，一分钱还包邮。总的算下来这个双十一并没有让某宝赚到很多，嘿嘿。<a id="more"></a><br>&emsp;&emsp;今天是刘静的生日，俊阳提前一天就QQ上跟我们说他要给刘静一个惊喜————到株洲给刘静过生日，让我们大家一起给她过一个有意义的生日。上周因为毕业生图像采集回长沙了一趟，在返程的路上刘静提到了很多关于俊阳的话题，脸上洋溢着幸福的表情。让我羡慕不已，什么时候我能找到属于我的Ms.Right呢？<br><img src="http://7xodgy.com1.z0.glb.clouddn.com/IMG_3310.JPG" alt="">&emsp;&emsp;而今天俊阳来给她过生日简直是给我这种单身狗造成了1000000点伤害，单身有时候久了，就会想自己什么时候能再次脱单呢，有个妹子在身边真的是件极好的事情。俊阳从85度C买来了水果蛋糕，又拿了一大束玫瑰，晚上坐车赶到株洲，为刘静过了这么有意义的一个生日，真的是好男人，我希望自己也能将来成为一个爱护妹子的优秀男生，不做渣男。<br>&emsp;&emsp;这两天，我写代码的时候总想写笔记做备忘，但觉得之前Hexo的那个主题色调单一，并没有写东西的动力，估计是看久那个主题的缘故，就跟毁一首歌最佳的办法就是把它设为起床闹钟一样，没有日久生情而是七年之痒~趁着刚刚重装完系统，我换上了Next主题，感觉还不错。回顾之前写的文章，突然发现我都快一年没有写blog了，没想到时间过的是如此之快，我只想时间慢一点再慢一点，能让我从容转身，多给我一点点辗转腾挪的空间。<br>&emsp;&emsp;去年国庆的时候，我跟自己下过5个目标，到现也只是把微信公众号完成了，而GPA保持的也还好，虽然不高但是也还看的过去，项目也水水结束了。但是Toefl和Gre搞了一年还多却进展不大，让我真的对自己很失望，当时奋战的考友一个又一个考了过去，而我面临申请也没考出来，实在是说不过去，也让我不得不往后推迟申请一年，这确实让我非常不爽。大四这一年我总觉得自己不够努力，既然放弃了那么多，为什么不去搏一搏，为自己争取一个更好的未来呢。我该振作起来了，既然选择放弃了上交，只能背水一战了，希望我能跨过Pacific Ocean到美帝去而不是留在中南读研，Fighting！</p>
 <p>写在生日十天前~</p>
-</span>
+
+      
+    </div>
+
+    <div>
+      
+        
       
     </div>
 
@@ -337,12 +374,11 @@
   </div>
 
 
-        </div>
+          </div>
+          
 
-        
 
-
-        
+          
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2015/11/20/practice-notes/"
@@ -352,10 +388,9 @@
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -383,10 +418,12 @@
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://7xodgy.com1.z0.glb.clouddn.com/imagesavatar.jpg" alt="Tony042" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="http://7xodgy.com1.z0.glb.clouddn.com/imagesavatar.jpg"
+               alt="Tony042" />
           <p class="site-author-name" itemprop="name">Tony042</p>
+          <p class="site-description motion-element" itemprop="description">拥抱生活</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">拥抱生活</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -395,19 +432,23 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
               
-          </div>
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">20</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -438,7 +479,8 @@
         
         
 
-        <div class="links-of-author motion-element">
+        
+        <div class="links-of-blogroll motion-element">
           
         </div>
 
@@ -467,7 +509,8 @@
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -475,9 +518,9 @@
         <div class="copyright" >
   
   &copy;  2014 - 
-  <span itemprop="copyrightYear">2015</span>
+  <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Tony042</span>
 </div>
@@ -498,59 +541,54 @@
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
 
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
-
-  
-    
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"shily"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-    
-     
-
-
-    
-  
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -684,7 +722,7 @@
 
     $('.post-toc a').on('click', function (e) {
       e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
       var offset = $(targetSelector).offset().top;
       hasVelocity ?
         html.velocity('stop').velocity('scroll', {
@@ -697,11 +735,12 @@
     });
 
     // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
+    NexT.motion.middleWares.sidebar = function () {
       var $tocContent = $('.post-toc-content');
-      if (CONFIG.sidebar === 'post') {
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
         if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
+          NexT.utils.displaySidebar();
         }
       }
     };
@@ -710,8 +749,41 @@
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  
 
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"shily"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
   
   
   <script type="text/x-mathjax-config">
@@ -740,6 +812,7 @@
 
 
   
-  
+
+
 </body>
 </html>

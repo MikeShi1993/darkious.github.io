@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="单身狗的怨念,圣诞快乐,大四,节日," />
@@ -44,7 +50,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
 
 
 
@@ -65,10 +71,16 @@
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Mist',
-    sidebar: 'post',
-    motion: true
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -77,15 +89,6 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -93,7 +96,16 @@
 
 
 
-  <div class="container one-column page-post-detail">
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -122,7 +134,7 @@
   
 
   
-    <ul id="menu" class="menu menu-left">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
@@ -166,6 +178,16 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
     </ul>
   
@@ -173,11 +195,9 @@
   
     <div class="site-search">
       
-  
   <form class="site-search-form">
-    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-  </form>
-
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
 
 <script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
@@ -199,8 +219,9 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
@@ -231,7 +252,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-12-25T23:24:11+08:00" content="2015-12-25">
               2015-12-25
             </time>
@@ -239,7 +263,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/随笔/" itemprop="url" rel="index">
@@ -267,19 +295,28 @@
 
           
 
+          
+          
+
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><p>&emsp;&emsp;今天圣诞节，虽然一个人但也感受到了浓浓的节日气氛，据士杰说，比在美国的氛围都浓。Merry Christmas^_^昨天，组里聚餐，在毛家饭店。我和马学长他们虽然提前打了Uber，可是路上因为交通管制和堵车（满满的怨念），居然是最后一个到的，而且那个司机不知道毛家饭店的位置，我们还跑了几百米才到饭店。由于是圣诞节,没想到龚老师的儿子居然也从美国回来了，心里不免多了一些羡慕。要是我要是能像龚老师或者他儿子那么成功就好了。<a id="more"></a><br>&emsp;&emsp;吃完，陪着组里的师兄师姐去万达看IMAX版&lt;&lt;寻龙诀&gt;&gt;虽然是二刷，可IMAX的效果还是再一次震撼到了我，和潇湘的3D相比，屏幕更大了，亮度更高了，3D更真实了，音效也更澎湃。并且，在国产烂片泛滥的时代，出现像&lt;&lt;寻龙诀&gt;&gt;这样的精品片实属不易，多支持国产良心大作也是理所应当的。晚上，回到组里打了一会儿炉石，又陪一位妹子出去绕着校园绕了一圈。或许是对她没有太多的感觉，也或许是对那位的念念不忘，让我没有对她过多表示什么。也许，我又错过了一个脱单的机会吧，可我并不后悔，错过就过吧。说不定就和心中的那位女神到同一个学校读研呢，或许有缘真的能相会。现在还是先默默做一名单身狗吧，把自己周围的事情处理好。不辜负其他人对我的支持，并且逐步改善我的性格，真的觉得周围人很包容我，尤其是马学长，很照顾我，或许你不会看到这些，可我还是想对你说声谢谢^_^前几天，狗板终于修成正果，我也希望我在不远的将来能遇到生命中的那个她。也在圣诞节祝福自己，在新的一年里面，一帆风顺，有一所比较心仪的美帝学校录取我，如果能发一篇Paper就再好不过了，fighting！</p>
-</span>
+        <p>&emsp;&emsp;今天圣诞节，虽然一个人但也感受到了浓浓的节日气氛，据士杰说，比在美国的氛围都浓。Merry Christmas^_^昨天，组里聚餐，在毛家饭店。我和马学长他们虽然提前打了Uber，可是路上因为交通管制和堵车（满满的怨念），居然是最后一个到的，而且那个司机不知道毛家饭店的位置，我们还跑了几百米才到饭店。由于是圣诞节,没想到龚老师的儿子居然也从美国回来了，心里不免多了一些羡慕。要是我要是能像龚老师或者他儿子那么成功就好了。<a id="more"></a><br>&emsp;&emsp;吃完，陪着组里的师兄师姐去万达看IMAX版&lt;&lt;寻龙诀&gt;&gt;虽然是二刷，可IMAX的效果还是再一次震撼到了我，和潇湘的3D相比，屏幕更大了，亮度更高了，3D更真实了，音效也更澎湃。并且，在国产烂片泛滥的时代，出现像&lt;&lt;寻龙诀&gt;&gt;这样的精品片实属不易，多支持国产良心大作也是理所应当的。晚上，回到组里打了一会儿炉石，又陪一位妹子出去绕着校园绕了一圈。或许是对她没有太多的感觉，也或许是对那位的念念不忘，让我没有对她过多表示什么。也许，我又错过了一个脱单的机会吧，可我并不后悔，错过就过吧。说不定就和心中的那位女神到同一个学校读研呢，或许有缘真的能相会。现在还是先默默做一名单身狗吧，把自己周围的事情处理好。不辜负其他人对我的支持，并且逐步改善我的性格，真的觉得周围人很包容我，尤其是马学长，很照顾我，或许你不会看到这些，可我还是想对你说声谢谢^_^前几天，狗板终于修成正果，我也希望我在不远的将来能遇到生命中的那个她。也在圣诞节祝福自己，在新的一年里面，一帆风顺，有一所比较心仪的美帝学校录取我，如果能发一篇Paper就再好不过了，fighting！</p>
+
+      
+    </div>
+
+    <div>
+      
+        
       
     </div>
 
@@ -327,12 +364,11 @@
   </div>
 
 
-        </div>
+          </div>
+          
 
-        
 
-
-        
+          
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2015/12/25/Merry-Christmas/"
@@ -342,10 +378,9 @@
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -373,10 +408,12 @@
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://7xodgy.com1.z0.glb.clouddn.com/imagesavatar.jpg" alt="Tony042" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="http://7xodgy.com1.z0.glb.clouddn.com/imagesavatar.jpg"
+               alt="Tony042" />
           <p class="site-author-name" itemprop="name">Tony042</p>
+          <p class="site-description motion-element" itemprop="description">拥抱生活</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">拥抱生活</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -385,19 +422,23 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
               
-          </div>
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">20</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -428,7 +469,8 @@
         
         
 
-        <div class="links-of-author motion-element">
+        
+        <div class="links-of-blogroll motion-element">
           
         </div>
 
@@ -457,7 +499,8 @@
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -465,9 +508,9 @@
         <div class="copyright" >
   
   &copy;  2014 - 
-  <span itemprop="copyrightYear">2015</span>
+  <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Tony042</span>
 </div>
@@ -488,59 +531,54 @@
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
 
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
-
-  
-    
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"shily"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-    
-     
-
-
-    
-  
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -674,7 +712,7 @@
 
     $('.post-toc a').on('click', function (e) {
       e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
       var offset = $(targetSelector).offset().top;
       hasVelocity ?
         html.velocity('stop').velocity('scroll', {
@@ -687,11 +725,12 @@
     });
 
     // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
+    NexT.motion.middleWares.sidebar = function () {
       var $tocContent = $('.post-toc-content');
-      if (CONFIG.sidebar === 'post') {
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
         if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
+          NexT.utils.displaySidebar();
         }
       }
     };
@@ -700,8 +739,41 @@
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  
 
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"shily"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
   
   
   <script type="text/x-mathjax-config">
@@ -730,6 +802,7 @@
 
 
   
-  
+
+
 </body>
 </html>

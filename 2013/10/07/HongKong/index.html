@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="小记,旅行," />
@@ -44,7 +50,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
 
 
 
@@ -65,10 +71,16 @@
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Mist',
-    sidebar: 'post',
-    motion: true
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -77,15 +89,6 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -93,7 +96,16 @@
 
 
 
-  <div class="container one-column page-post-detail">
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -122,7 +134,7 @@
   
 
   
-    <ul id="menu" class="menu menu-left">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
@@ -166,6 +178,16 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
     </ul>
   
@@ -173,11 +195,9 @@
   
     <div class="site-search">
       
-  
   <form class="site-search-form">
-    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-  </form>
-
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
 
 <script type="text/javascript">
   (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
@@ -199,8 +219,9 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
@@ -231,7 +252,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2013-10-07T21:00:00+08:00" content="2013-10-07">
               2013-10-07
             </time>
@@ -239,7 +263,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/blog/" itemprop="url" rel="index">
@@ -267,19 +295,28 @@
 
           
 
+          
+          
+
         </div>
       </header>
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <span itemprop="articleBody"><p>&emsp;&emsp;一次说走就走的旅行，背上身上的旅行包，坐上南下的火车，8个小时的硬座，就到了广州。十一的时候，人不是特别多，没有出现帝都和魔都看人海的盛景，从广州火车站出来坐了大概3、4站地铁就到了青年旅社，虽然是第一次住青旅，可是却没让我失望哦，我住的是男生6人间，里面很干净，一点都不乱，比宿舍好一点，有种家的感觉，wifi很快，老板说他办的是100m的，不过我们用wifi，所以达不到那么高，但是确实很快，ipad看视频根本不卡。我们的第一站中山大学，走在中山大学南校区，很多古树，郁郁葱葱的大树，林荫地，阳光漫洒，真的很美，中大的餐厅也挺好的，装修超漂亮，中南的一比果断弱爆了。之后去了沙面，沙面可以相当于北京的东交民巷，里面很多民国时期的使领馆，不过没想到，波兰领事馆和朝鲜领事馆居然还在里面正常工作。晚上的时候我们去了小蛮腰，这是唯一一次让我觉得很挤的时候，十一第一天，人超多，跟着人群，排了一个小时的队，上了小蛮腰，在这里吐槽以下小蛮腰的票价，上到白云观光厅要150元，要上到塔顶又要90元，学生套票要210，真的是有点贵了。到了塔顶真的很棒，一览广州塔美景，上面风很大，还下了一点点小雨，吹风的感觉真的很棒，广州的夜景也很棒，俯瞰海心沙的感觉很好。第二天，睡到自然醒，就去看了漫展，很不错，很多coser，蛮好玩的，还有很多动漫周边卖，以及漫画作者的亲笔签售会。说到广州不能不提它的吃的，早茶真的很好吃，很精致，客家人的慢生活，很悠闲。不过对于我这种肉食动物来说，猪脚饭神马的大爱啊，我会说我在广州和深圳吃了3、4天的潮汕隆江猪脚饭&gt;_&lt;真的好好吃，肥而不腻，再配上酸菜，以及猪骨，苹果，胡萝卜一起熬得老汤，真的是一种享受。<br>&emsp;&emsp;4号，和谐号动车，去了深圳，相比广州，深圳玩的就很少，地铁也没有广州的方便，广州的13条地铁线路真的很强大。高二的时候来到深圳住在老街旁边，没想到这回又是住在老街旁边，一晃三年过去了，可过去的事情还历历在目，白驹过隙，时间飞快&gt;_&lt;这家青旅很有特色，装修很好，而且有很多义工，特别欢乐，老板还切哈密瓜给我们吃。去了华强北，里面好多电子产品，铺天盖地，参观了一发，还不错。第二天一个人，默默地早起，开始一天的香港之旅，由于是L签我提前一天，在淘宝上找好卖家，花了5块钱组了个散团过了关，要是在口岸现场要50，非自由行城市童鞋要注意哦，出发的早，于是花了40分钟就过了关，踏进了资本主义社会的土地，嘎嘎。花了$150办了一张八达通卡，八达通跟我们的校园卡差不多，基本上全港的便利店7-11，麦当劳，地铁和巴士都可以刷的。在这里吐槽一下资本主义的罪恶，广州从城西坐到城东才5块钱啊，来回才10块钱，我从罗湖坐到中环又从中环坐回来居然花了我100+港币，心在滴血有木有，让我这穷游一族情何以堪，去了ifc和又一城，apple store果然很棒，土豪金果断是三种中最好看的，本来以为土狗灰或者东北银会好一点，结果看了真机，还是土豪金漂亮，香槟色淡淡的，手感有非常棒，在丰泽和苏宁看了surface，pro和rt的差距真心不是一点半点，pro的那根电磁笔大爱啊，可惜买不起T^T。在香港逛了一天，发现什么都买不起，太贵了，中午去麦当劳吃了一顿，那张餐纸很有爱的，嘿嘿，在香港简单逛了一圈，晚上就回深圳了，最后一天去了中英街，真的很坑爹，不要去，没有什么好看的，卖的东西也不便宜呢。不过可以去莲花山看日落和小梅沙看海，都很棒，可是我去了香港，就木有去，算是遗憾吧，下回有机会再去，八达通了还有几十港币呢。<br>&emsp;&emsp;坐了10几个小时的硬座，2点/3点/4点/5点醒了好多次，早上滚回了长沙，头还是晕晕乎乎的，睡了一下午终于缓过来了，这趟穷游之旅还是蛮好的，背上旅行包，一次说走就走的旅行。</p>
-</span>
+        <p>&emsp;&emsp;一次说走就走的旅行，背上身上的旅行包，坐上南下的火车，8个小时的硬座，就到了广州。十一的时候，人不是特别多，没有出现帝都和魔都看人海的盛景，从广州火车站出来坐了大概3、4站地铁就到了青年旅社，虽然是第一次住青旅，可是却没让我失望哦，我住的是男生6人间，里面很干净，一点都不乱，比宿舍好一点，有种家的感觉，wifi很快，老板说他办的是100m的，不过我们用wifi，所以达不到那么高，但是确实很快，ipad看视频根本不卡。我们的第一站中山大学，走在中山大学南校区，很多古树，郁郁葱葱的大树，林荫地，阳光漫洒，真的很美，中大的餐厅也挺好的，装修超漂亮，中南的一比果断弱爆了。之后去了沙面，沙面可以相当于北京的东交民巷，里面很多民国时期的使领馆，不过没想到，波兰领事馆和朝鲜领事馆居然还在里面正常工作。晚上的时候我们去了小蛮腰，这是唯一一次让我觉得很挤的时候，十一第一天，人超多，跟着人群，排了一个小时的队，上了小蛮腰，在这里吐槽以下小蛮腰的票价，上到白云观光厅要150元，要上到塔顶又要90元，学生套票要210，真的是有点贵了。到了塔顶真的很棒，一览广州塔美景，上面风很大，还下了一点点小雨，吹风的感觉真的很棒，广州的夜景也很棒，俯瞰海心沙的感觉很好。第二天，睡到自然醒，就去看了漫展，很不错，很多coser，蛮好玩的，还有很多动漫周边卖，以及漫画作者的亲笔签售会。说到广州不能不提它的吃的，早茶真的很好吃，很精致，客家人的慢生活，很悠闲。不过对于我这种肉食动物来说，猪脚饭神马的大爱啊，我会说我在广州和深圳吃了3、4天的潮汕隆江猪脚饭&gt;_&lt;真的好好吃，肥而不腻，再配上酸菜，以及猪骨，苹果，胡萝卜一起熬得老汤，真的是一种享受。<br>&emsp;&emsp;4号，和谐号动车，去了深圳，相比广州，深圳玩的就很少，地铁也没有广州的方便，广州的13条地铁线路真的很强大。高二的时候来到深圳住在老街旁边，没想到这回又是住在老街旁边，一晃三年过去了，可过去的事情还历历在目，白驹过隙，时间飞快&gt;_&lt;这家青旅很有特色，装修很好，而且有很多义工，特别欢乐，老板还切哈密瓜给我们吃。去了华强北，里面好多电子产品，铺天盖地，参观了一发，还不错。第二天一个人，默默地早起，开始一天的香港之旅，由于是L签我提前一天，在淘宝上找好卖家，花了5块钱组了个散团过了关，要是在口岸现场要50，非自由行城市童鞋要注意哦，出发的早，于是花了40分钟就过了关，踏进了资本主义社会的土地，嘎嘎。花了$150办了一张八达通卡，八达通跟我们的校园卡差不多，基本上全港的便利店7-11，麦当劳，地铁和巴士都可以刷的。在这里吐槽一下资本主义的罪恶，广州从城西坐到城东才5块钱啊，来回才10块钱，我从罗湖坐到中环又从中环坐回来居然花了我100+港币，心在滴血有木有，让我这穷游一族情何以堪，去了ifc和又一城，apple store果然很棒，土豪金果断是三种中最好看的，本来以为土狗灰或者东北银会好一点，结果看了真机，还是土豪金漂亮，香槟色淡淡的，手感有非常棒，在丰泽和苏宁看了surface，pro和rt的差距真心不是一点半点，pro的那根电磁笔大爱啊，可惜买不起T^T。在香港逛了一天，发现什么都买不起，太贵了，中午去麦当劳吃了一顿，那张餐纸很有爱的，嘿嘿，在香港简单逛了一圈，晚上就回深圳了，最后一天去了中英街，真的很坑爹，不要去，没有什么好看的，卖的东西也不便宜呢。不过可以去莲花山看日落和小梅沙看海，都很棒，可是我去了香港，就木有去，算是遗憾吧，下回有机会再去，八达通了还有几十港币呢。<br>&emsp;&emsp;坐了10几个小时的硬座，2点/3点/4点/5点醒了好多次，早上滚回了长沙，头还是晕晕乎乎的，睡了一下午终于缓过来了，这趟穷游之旅还是蛮好的，背上旅行包，一次说走就走的旅行。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
       
     </div>
 
@@ -323,12 +360,11 @@
   </div>
 
 
-        </div>
+          </div>
+          
 
-        
 
-
-        
+          
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2013/10/07/HongKong/"
@@ -338,10 +374,9 @@
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -369,10 +404,12 @@
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://7xodgy.com1.z0.glb.clouddn.com/imagesavatar.jpg" alt="Tony042" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="http://7xodgy.com1.z0.glb.clouddn.com/imagesavatar.jpg"
+               alt="Tony042" />
           <p class="site-author-name" itemprop="name">Tony042</p>
+          <p class="site-description motion-element" itemprop="description">拥抱生活</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">拥抱生活</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -381,19 +418,23 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
               
-          </div>
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">20</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -424,7 +465,8 @@
         
         
 
-        <div class="links-of-author motion-element">
+        
+        <div class="links-of-blogroll motion-element">
           
         </div>
 
@@ -453,7 +495,8 @@
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -461,9 +504,9 @@
         <div class="copyright" >
   
   &copy;  2014 - 
-  <span itemprop="copyrightYear">2015</span>
+  <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Tony042</span>
 </div>
@@ -484,59 +527,54 @@
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
 
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
-
-  
-    
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"shily"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-    
-     
-
-
-    
-  
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -670,7 +708,7 @@
 
     $('.post-toc a').on('click', function (e) {
       e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
       var offset = $(targetSelector).offset().top;
       hasVelocity ?
         html.velocity('stop').velocity('scroll', {
@@ -683,11 +721,12 @@
     });
 
     // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
+    NexT.motion.middleWares.sidebar = function () {
       var $tocContent = $('.post-toc-content');
-      if (CONFIG.sidebar === 'post') {
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
         if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
+          NexT.utils.displaySidebar();
         }
       }
     };
@@ -696,8 +735,41 @@
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  
 
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"shily"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
   
   
   <script type="text/x-mathjax-config">
@@ -726,6 +798,7 @@
 
 
   
-  
+
+
 </body>
 </html>
