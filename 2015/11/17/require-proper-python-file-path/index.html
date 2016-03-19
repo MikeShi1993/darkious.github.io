@@ -63,7 +63,7 @@
 <meta property="og:url" content="http://www.shily.me/2015/11/17/require-proper-python-file-path/index.html">
 <meta property="og:site_name" content="Tony042's Notes">
 <meta property="og:description" content="以前的方法如果是要获得程序运行的当前目录所在位置，那么可以使用os模块的os.getcwd()函数。">
-<meta property="og:updated_time" content="2015-11-17T16:15:14.791Z">
+<meta property="og:updated_time" content="2016-03-19T14:31:25.838Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="获取Python脚本所在目录的正确方法">
 <meta name="twitter:description" content="以前的方法如果是要获得程序运行的当前目录所在位置，那么可以使用os模块的os.getcwd()函数。">
@@ -318,8 +318,8 @@
       
 
       
-        <h2 id="以前的方法">以前的方法</h2><p>如果是要获得程序运行的当前目录所在位置，那么可以使用os模块的<code>os.getcwd()</code>函数。<br><a id="more"></a></p>
-<h2 id="正确的方法">正确的方法</h2><p>但以上这些其实都不是脚本文件所在目录的位置,获取Python脚本所在目录实际应使用<code>os.path.split(os.path.realpath(__file__))[0]</code>其中<code>__file__</code>虽然是所在.py文件的完整路径，但是这个变量有时候返回相对路径，有时候返回绝对路径，因此 还要用<code>os.path.realpath()</code>函数来处理一下。</p>
+        <h3 id="以前的方法">以前的方法</h3><p>如果是要获得程序运行的当前目录所在位置，那么可以使用os模块的<code>os.getcwd()</code>函数。<br><a id="more"></a></p>
+<h3 id="正确的方法">正确的方法</h3><p>但以上这些其实都不是脚本文件所在目录的位置,获取Python脚本所在目录实际应使用<code>os.path.split(os.path.realpath(__file__))[0]</code>其中<code>__file__</code>虽然是所在.py文件的完整路径，但是这个变量有时候返回相对路径，有时候返回绝对路径，因此 还要用<code>os.path.realpath()</code>函数来处理一下。</p>
 
       
     </div>
@@ -446,7 +446,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">22</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -498,7 +498,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#以前的方法"><span class="nav-number">1.</span> <span class="nav-text">以前的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正确的方法"><span class="nav-number">2.</span> <span class="nav-text">正确的方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#以前的方法"><span class="nav-number">1.</span> <span class="nav-text">以前的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正确的方法"><span class="nav-number">2.</span> <span class="nav-text">正确的方法</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
